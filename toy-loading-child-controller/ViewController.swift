@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadSomething()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Main"
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func loadSomething() {
+        let loadingViewController = LoadingViewController()
+        add(loadingViewController)
 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            loadingViewController.remove()
+        }
+    }
 }
 

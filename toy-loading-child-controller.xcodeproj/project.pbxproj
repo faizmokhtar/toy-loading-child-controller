@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C7A4B7A1200289D645A97B2 /* Pods_toy_loading_child_controller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E41134590BF4A91AF152AF /* Pods_toy_loading_child_controller.framework */; };
 		985F5CB3209F0FA300EE8BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F5CB2209F0FA300EE8BFF /* AppDelegate.swift */; };
 		985F5CB5209F0FA300EE8BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F5CB4209F0FA300EE8BFF /* ViewController.swift */; };
 		985F5CB8209F0FA300EE8BFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985F5CB6209F0FA300EE8BFF /* Main.storyboard */; };
 		985F5CBA209F0FA400EE8BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985F5CB9209F0FA400EE8BFF /* Assets.xcassets */; };
 		985F5CBD209F0FA400EE8BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985F5CBB209F0FA400EE8BFF /* LaunchScreen.storyboard */; };
+		985F5CC6209F105E00EE8BFF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F5CC4209F105E00EE8BFF /* LoadingViewController.swift */; };
+		985F5CC7209F105E00EE8BFF /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985F5CC5209F105E00EE8BFF /* LoadingViewController.xib */; };
+		985F5CC9209F110F00EE8BFF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985F5CC8209F110F00EE8BFF /* UIViewController+Extensions.swift */; };
+		985F5CCF209F1DFB00EE8BFF /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 985F5CCE209F1DFB00EE8BFF /* loader.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48E41134590BF4A91AF152AF /* Pods_toy_loading_child_controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toy_loading_child_controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4F09E7EB26866F1259A735 /* Pods-toy-loading-child-controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toy-loading-child-controller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toy-loading-child-controller/Pods-toy-loading-child-controller.debug.xcconfig"; sourceTree = "<group>"; };
 		985F5CAF209F0FA300EE8BFF /* toy-loading-child-controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "toy-loading-child-controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		985F5CB2209F0FA300EE8BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		985F5CB4209F0FA300EE8BFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		985F5CB9209F0FA400EE8BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		985F5CBC209F0FA400EE8BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		985F5CBE209F0FA400EE8BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		985F5CC4209F105E00EE8BFF /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		985F5CC5209F105E00EE8BFF /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		985F5CC8209F110F00EE8BFF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		985F5CCE209F1DFB00EE8BFF /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		E0E27E7494371BC695951127 /* Pods-toy-loading-child-controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toy-loading-child-controller.release.xcconfig"; path = "Pods/Target Support Files/Pods-toy-loading-child-controller/Pods-toy-loading-child-controller.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7A4B7A1200289D645A97B2 /* Pods_toy_loading_child_controller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E3FC3A8C6592EF31C118E83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E41134590BF4A91AF152AF /* Pods_toy_loading_child_controller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		985F5CA6209F0FA300EE8BFF = {
 			isa = PBXGroup;
 			children = (
 				985F5CB1209F0FA300EE8BFF /* toy-loading-child-controller */,
 				985F5CB0209F0FA300EE8BFF /* Products */,
+				EC4145C353E8CA5E870B1C4F /* Pods */,
+				2E3FC3A8C6592EF31C118E83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +79,25 @@
 			children = (
 				985F5CB2209F0FA300EE8BFF /* AppDelegate.swift */,
 				985F5CB4209F0FA300EE8BFF /* ViewController.swift */,
+				985F5CC4209F105E00EE8BFF /* LoadingViewController.swift */,
+				985F5CC5209F105E00EE8BFF /* LoadingViewController.xib */,
+				985F5CC8209F110F00EE8BFF /* UIViewController+Extensions.swift */,
+				985F5CCE209F1DFB00EE8BFF /* loader.json */,
 				985F5CB6209F0FA300EE8BFF /* Main.storyboard */,
 				985F5CB9209F0FA400EE8BFF /* Assets.xcassets */,
 				985F5CBB209F0FA400EE8BFF /* LaunchScreen.storyboard */,
 				985F5CBE209F0FA400EE8BFF /* Info.plist */,
 			);
 			path = "toy-loading-child-controller";
+			sourceTree = "<group>";
+		};
+		EC4145C353E8CA5E870B1C4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E4F09E7EB26866F1259A735 /* Pods-toy-loading-child-controller.debug.xcconfig */,
+				E0E27E7494371BC695951127 /* Pods-toy-loading-child-controller.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 985F5CC1209F0FA400EE8BFF /* Build configuration list for PBXNativeTarget "toy-loading-child-controller" */;
 			buildPhases = (
+				064410C54FB1706F27999D80 /* [CP] Check Pods Manifest.lock */,
 				985F5CAB209F0FA300EE8BFF /* Sources */,
 				985F5CAC209F0FA300EE8BFF /* Frameworks */,
 				985F5CAD209F0FA300EE8BFF /* Resources */,
+				A0942F076264415CA613D64B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +163,61 @@
 				985F5CBD209F0FA400EE8BFF /* LaunchScreen.storyboard in Resources */,
 				985F5CBA209F0FA400EE8BFF /* Assets.xcassets in Resources */,
 				985F5CB8209F0FA300EE8BFF /* Main.storyboard in Resources */,
+				985F5CC7209F105E00EE8BFF /* LoadingViewController.xib in Resources */,
+				985F5CCF209F1DFB00EE8BFF /* loader.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		064410C54FB1706F27999D80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-toy-loading-child-controller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0942F076264415CA613D64B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-toy-loading-child-controller/Pods-toy-loading-child-controller-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toy-loading-child-controller/Pods-toy-loading-child-controller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		985F5CAB209F0FA300EE8BFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985F5CC9209F110F00EE8BFF /* UIViewController+Extensions.swift in Sources */,
 				985F5CB5209F0FA300EE8BFF /* ViewController.swift in Sources */,
 				985F5CB3209F0FA300EE8BFF /* AppDelegate.swift in Sources */,
+				985F5CC6209F105E00EE8BFF /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +359,7 @@
 		};
 		985F5CC2209F0FA400EE8BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4F09E7EB26866F1259A735 /* Pods-toy-loading-child-controller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +378,7 @@
 		};
 		985F5CC3209F0FA400EE8BFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E27E7494371BC695951127 /* Pods-toy-loading-child-controller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
